@@ -28,14 +28,26 @@
       animation: fadeIn 1s ease forwards;
     }
 
-    .avatar {
+    /* Contenedor del avatar */
+    .avatar-container {
       width: 140px;
       height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
+      border-radius: 50%;   /* círculo */
+      overflow: hidden;     /* recorta la imagen fuera del círculo */
       border: 4px solid #0077b6;
       margin-bottom: 20px;
-      transform: translateY(10px);
+    }
+
+    /* Imagen dentro del avatar */
+    .avatar {
+     image-rendering: auto;           /* default, suaviza escalado */
+      -webkit-backface-visibility: hidden;  /* ayuda a suavizar en Chrome/Safari */
+      -webkit-transform: translateZ(0);  
+      image-rendering: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;        /* cubre el círculo sin deformarse */
+      object-position: center 25%; /* mueve la imagen hacia abajo */
     }
 
     h1 {
@@ -130,7 +142,9 @@
 <body>
 
   <div class="header">
-    <img class="avatar" src="avatar.jpg" alt="Carlos Fernández">
+    <div class="avatar-container">
+      <img class="avatar" src="avatar.jpg" alt="Carlos Fernández">
+    </div>
     <h1>Carlos Fernández</h1>
     <h2>Cloud & DevOps Enthusiast</h2>
   </div>
