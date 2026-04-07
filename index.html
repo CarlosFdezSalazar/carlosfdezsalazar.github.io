@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cloud & DevOps Engineer — Portfolio" />
+  <title>Carlos Fernández · Cloud & DevOps - SysAdmin</title>
+
+  <!-- Google Fonts: Syne (display) + DM Mono (body/code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+  ============================================== -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">CF<span class="accent">.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- =============================================
+       HERO SECTION
+       Edit: your name, title, description, CTA
+  ============================================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow fade-up">Abierto a oportunidades</p>
+      <h1 class="hero__name fade-up">Carlos<br /><span class="accent">Fernández</span></h1>
+      <p class="hero__title fade-up">
+        <span class="tag">Cloud &amp; DevOps - SysAdmin</span>
+      </p>
+      <p class="hero__desc fade-up">
+        Exploro y profundizo en Cloud Architecture y prácticas DevOps, 
+        diseñando infraestructuras en la nube eficientes y escalables. 
+        Trabajo con CI/CD e IaC para construir flujos de despliegue rápidos y fiables, 
+        optimizando herramientas, arquitectura y sistemas orientados a la automatización y la resiliencia
+      </p>
+      <div class="hero__actions fade-up">
+        <a href="#projects" class="btn btn--primary">Ver mi trabajo</a>
+        <a href="#contact" class="btn btn--ghost">Contacta conmigo</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ABOUT SECTION
+       Edit: your background paragraph(s)
+  ============================================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label">01 / About</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section__heading">Transformando infraestructuras en<br /><span class="accent">soluciones Cloud modernas.</span></h2>
+          <p>
+            Administrador de sistemas con experiencia en Linux y virtualización, actualmente en transición hacia Cloud & DevOps. 
+            Cursando el Máster en Cloud Architecture & DevOps Management en IMMUNE Technology Institute y preparandome para la certificación de AWS Solutions Architect Associate.
+          </p>
+          <p>
+            Apasionado por crear infraestructuras automatizadas y escalables que optimicen flujos de trabajo y faciliten el desarrollo de equipos, 
+            aplicando principios de DevOps y Cloud Architecture para que los sistemas funcionen de manera eficiente y confiable.
+          </p>
+          <div class="about__stack">
+            <!-- Edit: add or remove skills -->
+            <span class="pill">AWS</span>
+            <span class="pill">GCP</span>
+            <span class="pill">Azure</span>
+            <span class="pill">Linux</span>
+            <span class="pill">Bash</span>
+            <span class="pill">Powershell</span>
+            <span class="pill">Virtualización</span>
+            <span class="pill">BBDD</span>
+            <span class="pill">IaC</span>
+            <span class="pill">Redes</span>
+          </div>
+        </div>
+        <div class="about__aside">
+          <!-- Optional: replace src with your real photo -->
+          <div class="about__avatar">
+            <div class="about__avatar-inner">
+              <img
+                src="avatar.jpg"
+                alt="Foto de perfil"
+                class="about__avatar-img"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <i class="fa-solid fa-terminal" style="display:none;"></i>
+            </div>
+          </div>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num">AWS Solutions Architect Associate</span>
+              <span class="stat__label">Próximo objetivo</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num"></span>
+              <span class="stat__label"></span>
+            </div>
+            <div class="stat">
+              <span class="stat__num"></span>
+              <span class="stat__label"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       LINKS SECTION
+       Edit: href values with your real URLs / email
+  ============================================== -->
+  <section class="section links" id="links">
+    <div class="container">
+      <div class="section__label">02 / Links</div>
+      <h2 class="section__heading">Dónde encontrarme.<br /><span class="accent"> </span></h2>
+      <div class="links__grid">
+
+        <!-- GitHub (primary) -->
+        <a href="https://github.com/CarlosFdezSalazar" target="_blank" rel="noopener" class="link-card link-card--github">
+          <div class="link-card__icon"><i class="fa-brands fa-github"></i></div>
+          <div class="link-card__body">
+            <span class="link-card__label">GitHub</span>
+            <span class="link-card__sub">@CarlosFdezSalazar</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square link-card__arrow"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/carlosfernandezsalazar/" target="_blank" rel="noopener" class="link-card link-card--linkedin">
+          <div class="link-card__icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="link-card__body">
+            <span class="link-card__label">LinkedIn</span>
+            <span class="link-card__sub">Perfil profesional</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square link-card__arrow"></i>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:info@carlosfdez.com" class="link-card link-card--email">
+          <div class="link-card__icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="link-card__body">
+            <span class="link-card__label">Email</span>
+            <span class="link-card__sub">info@carlosfdez.com</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square link-card__arrow"></i>
+        </a>
+
+        <!-- Cover Letter PDF
+             Edit: place your PDF in the repo root and update href -->
+        <a href="CartaCarlosFdez.pdf" download class="link-card link-card--pdf">
+          <div class="link-card__icon"><i class="fa-solid fa-file-pdf"></i></div>
+          <div class="link-card__body">
+            <span class="link-card__label">Carta de presentación</span>
+            <span class="link-card__sub">Descargar PDF</span>
+          </div>
+          <i class="fa-solid fa-download link-card__arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PROJECTS SECTION
+       HOW TO ADD A NEW PROJECT:
+       1. Copy one .project-card block below
+       2. Update title, description, tech pills, links
+       3. To add a video: uncomment the .project-card__video div
+          and replace VIDEO_ID with the YouTube video ID
+       4. To add a PDF: uncomment the PDF download link
+  ============================================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label">03 / Projects</div>
+      <h2 class="section__heading">Proyectos que he<br /><span class="accent">construido.</span></h2>
+      <div class="projects__grid">
+
+        <!-- ── PROJECT CARD 1 ── -->
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__number">01</span>
+            <div class="project-card__links">
+              <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- Optional: external live link
+              <a href="https://yourproject.com" target="_blank" rel="noopener" aria-label="Live site">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              -->
+            </div>
+          </div>
+          <h3 class="project-card__title">Penguin On The Way! Secure & Highly Available AWS Infrastructure  </h3>
+          <p class="project-card__desc">
+            Proyecto centrado en el diseño y despliegue de una infraestructura cloud completa en AWS.
+            Implementa una arquitectura por capas con alta disponibilidad, escalabilidad y seguridad.
+            Incluye servicios como EC2, ALB, Auto Scaling, RDS Multi-AZ, monitorización y auditoría.
+            La aplicación web actúa como soporte para validar el comportamiento de la infraestructura en un entorno realista.
+          </p>
+          <div class="project-card__tech">
+            <span class="pill pill--sm">AWS</span>
+            <span class="pill pill--sm">Linux</span>
+            <span class="pill pill--sm">Nginx</span>
+            <span class="pill pill--sm">Flask</span>
+            <span class="pill pill--sm">Gunicorn</span>
+            <span class="pill pill--sm">Bash</span>
+            <span class="pill pill--sm">Python (Boto3)</span>
+            <span class="pill pill--sm">HTML</span>
+            <span class="pill pill--sm">CSS</span>
+            <span class="pill pill--sm">JavaScript</span>
+          </div>
+
+          <!-- ── OPTIONAL VIDEO (YouTube embed)
+               Replace VIDEO_ID with actual YouTube ID, then remove the HTML comment wrappers
+          <div class="project-card__video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+              title="Project demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          ── END OPTIONAL VIDEO ── -->
+
+          <!-- ── OPTIONAL PDF download
+          <a href="docs/project-one-docs.pdf" download class="project-card__pdf">
+            <i class="fa-solid fa-file-pdf"></i> Download Documentation
+          </a>
+          ── END OPTIONAL PDF ── -->
+
+          <div class="project-card__video">
+            <iframe
+              src="https://www.youtube.com/shorts/qZjp5M7IVQE"
+              title="Project demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <!-- ── OPTIONAL PDF download
+          <a href="docs/project-one-docs.pdf" download class="project-card__pdf">
+            <i class="fa-solid fa-file-pdf"></i> Download Documentation
+          </a>
+          ── END OPTIONAL PDF ── -->
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MEDIA SECTION
+       HOW TO ADD MEDIA:
+       - Videos: add a .media-item with an <iframe> (YouTube embed)
+       - PDFs: add a .media-item with <embed> or a download link
+       - Images: add a .media-item with an <img>
+  ============================================== -->
+  <section class="section media" id="media">
+    <div class="container">
+      <div class="section__label">04 / Media</div>
+      <h2 class="section__heading">Demos y screenshots: <br /><span class="accent">Penguin on the way!.</span></h2>
+      <div class="media__grid">
+
+        <!-- ── MEDIA ITEM: YouTube demo video ── -->
+        <div class="media-item media-item--video">
+          <div class="media-item__badge"><i class="fa-brands fa-youtube"></i> Demo</div>
+          <div class="media-item__video-wrap">
+            <!-- Replace VIDEO_ID with your YouTube video ID -->
+            <iframe
+              src="https://www.youtube.com/watch?v=x_02zRjsbXw"
+              title="Project Demo Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <p class="media-item__caption">Despliegue con CloudFormation — Demostración de funcionamiento</p>
+        </div>
+
+        <!-- ── MEDIA ITEM: PDF preview / download ── -->
+        <div class="media-item media-item--pdf">
+          <div class="media-item__badge"><i class="fa-solid fa-file-pdf"></i> PDF</div>
+          <div class="media-item__pdf-preview">
+            <i class="fa-solid fa-file-lines"></i>
+            <p>Documentación de Penguin on the Way!</p>
+            <!-- Replace href with your PDF path -->
+            <a href="PenguinOnTheWay.pdf" download class="btn btn--ghost btn--sm">
+              <i class="fa-solid fa-download"></i> Download
+            </a>
+          </div>
+          <p class="media-item__caption">Proyecto completo</p>
+        </div>
+
+        <!-- ── MEDIA ITEM: Screenshot image ── -->
+        <div class="media-item media-item--image">
+          <div class="media-item__badge"><i class="fa-solid fa-image"></i> Screenshot</div>
+          <!-- Replace src with a real screenshot; use a descriptive alt text -->
+          <div class="media-item__img-wrap">
+            <div class="media-item__img-placeholder">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Diagrama del proyecto</span>
+              <img src="diagrama.png" alt="Diagrama de la infraestructura de Penguin on the Way" />
+            </div>
+          </div>
+          <p class="media-item__caption">AWS multi-region architecture</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- =============================================
+       CONTACT SECTION
+       Edit: mailto address and any personal message
+  ============================================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label">05 / Contacto</div>
+      <div class="contact__inner">
+        <h2 class="section__heading contact__heading">
+          ¡Hablemos!<br /><span class="accent"></span>
+        </h2>
+        <p class="contact__sub">
+          Abierto a puestos full-time, proyectos y a conectar con compañeros del sector.
+          ¡Déjame un mensaje! Respondo en unas 24 horas.
+        </p>
+        <a href="mailto:your@email.com" class="contact__email">
+          <i class="fa-solid fa-envelope"></i>
+          info@carlosfdez.com
+        </a>
+        <div class="contact__actions">
+          <a href="mailto:your@email.com" class="btn btn--primary btn--lg">Mándame un correo</a>
+          <a href="https://linkedin.com/in/carlosfernandezsalazar" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+            Conectar en LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+       Edit: name, year, social links
+  ============================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">Carlos Fernández Salazar - Transformando ideas en arquitecturas cloud </span>
+      <div class="footer__socials">
+        <a href="https://github.com/CarlosFdezSalazar" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/carlosfernandezsalazar" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:info@carlosfdez.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
