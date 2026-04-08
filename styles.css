@@ -465,6 +465,8 @@ ul { list-style: none; }
 /* =============================================
    LINKS
 ============================================= */
+.links { background: var(--bg); }
+
 .links__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
