@@ -537,7 +537,7 @@ ul { list-style: none; }
 /* =============================================
    PROJECTS
 ============================================= */
-.projects { background: var(--bg); }
+.projects { background: var(--bg-2); }
 
 .projects__grid {
   display: grid;
@@ -646,7 +646,7 @@ ul { list-style: none; }
 /* =============================================
    MEDIA
 ============================================= */
-.media { background: var(--bg-2); }
+.media { background: var(--bg); }
 
 .media__grid {
   display: grid;
@@ -738,7 +738,7 @@ ul { list-style: none; }
    CONTACT
 ============================================= */
 .contact {
-  background: var(--bg);
+  background: var(--bg-2);
   position: relative;
   overflow: hidden;
 }
