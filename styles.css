@@ -226,12 +226,13 @@ ul { list-style: none; }
   .nav__links {
     position: fixed;
     inset: 0;
+    top: 0;
+    z-index: 998;
     background: var(--bg);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    font-size: 1.1rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity var(--med) var(--ease);
@@ -240,7 +241,10 @@ ul { list-style: none; }
     opacity: 1;
     pointer-events: all;
   }
-  .nav__links a { font-size: 1rem; letter-spacing: .15em; }
+  .nav__links a {
+    font-size: 1.4rem;
+    letter-spacing: .15em;
+  }
 }
 
 /* =============================================
@@ -902,3 +906,5 @@ ul { list-style: none; }
 .about__avatar::before {
   display: none;
 }
+
+
