@@ -898,3 +898,7 @@ ul { list-style: none; }
 .media-item__yt-link:hover .media-item__yt-overlay {
   opacity: 1;
 }
+
+.about__avatar::before {
+  display: none;
+}
